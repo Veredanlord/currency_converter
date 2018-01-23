@@ -54,7 +54,7 @@ REST_ROUTER.prototype.handleRoutes = function(router) {
       if(self.getChange() !== undefined){
         var result = self.getChange();
         result = result.rates;
-        res.json({"Error" : false, "Message" : Object.keys(result)});
+        res.json({"Error" : false, "rates" : Object.keys(result)});
       }else{s
         res.json({"Error" : true, "Message" : "Change could not be retrieved"});
       }

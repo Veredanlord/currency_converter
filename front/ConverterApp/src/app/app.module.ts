@@ -6,6 +6,8 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {MatNativeDateModule,} from '@angular/material';
 import {HttpModule} from "@angular/http";
 import {MaterialModule} from './material.module';
+import {HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -14,13 +16,14 @@ import {MaterialModule} from './material.module';
     MaterialModule,
     MatNativeDateModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
 
   declarations: [AppComponent],
   bootstrap: [AppComponent],
-  providers: []
+  providers: [],
 })
 
 export class AppModule {}
 
-//platformBrowserDynamic().bootstrapModule(AppModule);
+platformBrowserDynamic().bootstrapModule(AppModule);
