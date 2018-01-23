@@ -1,0 +1,28 @@
+<div class="col-md-4">
+    <mat-form-field>
+      <mat-select #currencyYouHave placeholder="Currency you have" (change)="tryToConvert()">
+        <mat-option value="option">Option</mat-option>
+        <mat-option value="option">Option</mat-option>
+        <mat-option value="option">Option</mat-option>
+        <mat-option value="option">Option</mat-option>
+        <mat-option value="option">Option</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+    <input matInput placeholder="Amount" #amount (change)="tryToConvert()">
+  </mat-form-field>
+</div>
+<div class="col-md-4">
+
+</div>
+<div class="col-md-4">
+  <mat-form-field>
+    <mat-select #currencyYouWant placeholder="Currency you want" (change)="tryToConvert()">
+      <mat-option value="option">Option</mat-option>
+      <mat-option value="option">Option</mat-option>
+      <mat-option value="option">Option</mat-option>
+      <mat-option value="option">Option</mat-option>
+      <mat-option value="option">Option</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
